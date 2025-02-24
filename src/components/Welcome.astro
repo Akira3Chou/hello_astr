@@ -1,11 +1,12 @@
 ---
-import Navigation from '../components/Navigation.astro';
+import Header from './Header.astro';
+import Footer from './Footer.astro';
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 ---
 
 <div id="container">
-    <Navigation/>
+    <Header/>
 	
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
 	<main>
@@ -42,6 +43,10 @@ import background from '../assets/background.svg';
 			improvements in Astro 5.0
 		</p>
 	</a>
+	<Footer />
+	<script>
+		import '../scripts/menu.js'
+	</script>
 </div>
 
 <style>
